@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 
 	<name>addressbook</name>
-	<url>http://maven.apache.org</url>
+	<url>http://www.opencsta.org/tutorial/addressbook</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

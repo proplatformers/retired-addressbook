@@ -7,6 +7,7 @@
  *
  * Contributors:
  *     IBM Corporation - initial API and implementation
+ *     Chris Mylonas - 2012 Open CSTA addressbook tutorial
  *******************************************************************************/
 package org.opencsta.addressbook;
 
@@ -742,9 +743,22 @@ private Menu createPopUpMenu() {
 			items[7].setEnabled(table.getItemCount() != 0); // find
 		}
 	});
+	
+	//Added for opencsta's addressbook tutorial
+	//Call
+		MenuItem item = new MenuItem(popUpMenu, SWT.PUSH);
+		item.setText(resAddressBook.getString("Pop_up_call"));
+		item.addSelectionListener(new SelectionAdapter() {
+			public void widgetSelected(SelectionEvent e) {
+	            //COME BACK IN FILL IN THE IMPLEMENTATION
+	            //THIS IS JUST TO CHECK THAT WE HAVE GOT THE CORRECT UI STUFF HAPPENING
+			}
+		});
+		
+		new MenuItem(popUpMenu, SWT.SEPARATOR);	
 
 	//New
-	MenuItem item = new MenuItem(popUpMenu, SWT.PUSH);
+	item = new MenuItem(popUpMenu, SWT.PUSH);
 	item.setText(resAddressBook.getString("Pop_up_new"));
 	item.addSelectionListener(new SelectionAdapter() {
 		public void widgetSelected(SelectionEvent e) {
